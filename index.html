@@ -11,16 +11,18 @@
             margin-left: 125px;
         }
         .top-nav {
-            list-style: none inside;
+            list-style: none;
             margin-left: 125px;
             padding: 0;
             text-align: center;
+            position: relative;
         }
 
         .top-nav li {
-            display: block;
+            display: inline;
             position: relative;
             float: left;
+            white-space: nowrap;
             background: #000000;
             /* menu background color */
         }
@@ -29,18 +31,19 @@
             display: block;
             padding: 0;
             text-decoration: none;
-            width: 200px;
+            width: 10vw;
             /* this is the width of the menu items */
-            line-height: 35px;
-            /* this is the hieght of the menu items */
-            color: #ffffff;
+            line-height: 5vh;
+            /* this is the height of the menu items */
+            color: #f1f3f3;
             /* list item font color */
             font-weight: bold;
-            font-family: helvetica sans-serif;
+            font-family: helvetica, sans-serif;
+            font-size: 14px;
         }
 
         .top-nav li li a {
-            font-size: 80%;
+            font-size: 90%;
         }
 
         /* smaller font size for sub menu items */
@@ -74,26 +77,30 @@
         .top-nav li li:hover ul {
             display: block;
             /* shows sub-sublist on hover */
-            margin-left: 200px;
+            margin-left: 15vw;
             /* this should be the same width as the parent list item */
             margin-top: -35px;
             /* aligns top of sub menu with top of list item */
         }
 
         .sub-nav li a{
-            background: #fff;
+            background: #f1f3f3;
             color: #000;
             font-weight: none;
+            width: 15vw;
         }
+
+        .l2 {
+
+            cursor: default;
+
+        } 
 
         .sub-nav li a:hover {
             background: #175FB4;
             color: #fff;
         }
 
-        #all-new {
-            font-weight: none;
-        }
     </style>
 
 </head>
@@ -117,9 +124,14 @@
                 <ul class="sub-nav">
                     <li><a href="https://www.especiallyyours.com/category/wigs/all-wigs.do">All Wigs</a></li>
 
-                    <!-- SHOULD WE HAVE THESE L2S BE REDIRECTED TO ALL STYLES, FIBERS ETC OR LEAVE LANDING PAGE OR NOT CLICKABLE AT ALL?? -->
+                    <!-- SHOULD WE HAVE THESE L2S BE REDIRECTED TO ALL STYLES, FIBERS ETC OR LEAVE LANDING PAGE OR NOT CLICKABLE AT ALL?? [Per PY MAKE IT NOT CLICKABLE] -->
 
                     <li><a href="https://www.especiallyyours.com/category/wigs/wigs-by-style.do">Wigs by Style</a>
+
+
+                        <!-- SHOULD THIS BE CHANGED TO JUST STYLE & (other cats) PY IS JUST STYLE -->
+
+
                         <ul>
                             <li><a href="https://www.especiallyyours.com/category/wigs/bob+wigs.do">Bob Wigs</a></li>
                             <li><a href="https://www.especiallyyours.com/category/wigs/pixie+wigs.do">Pixie Wigs</a></li>
@@ -256,7 +268,9 @@
                 <ul class="sub-nav">
                     <li><a href="https://www.especiallyyours.com/category/clothing/all-accessories.do">All Accessories</a></li>
                     <li><a href="https://www.especiallyyours.com/category/clothing/hats.do">Hats</a></li>
+                    
                     <!-- ARE HATS + CHURCH HATS DIFFERENT? SHOULD THESE BE COMBINED/REDIRECTED TO JUST HATS? -->
+
                     <li><a href="https://www.especiallyyours.com/category/clothing/church-hats.do">Church Hats</a></li>
                     <li><a href="https://www.especiallyyours.com/category/clothing/handbags.do">Handbags</a></li>
                     <li><a href="https://www.especiallyyours.com/category/clothing/turbans-and-headwear.do">Turbans & Headwear</a></li>
@@ -295,7 +309,7 @@
                             <li><a href="https://www.especiallyyours.com/category/wig+brands/hairdo+wigs.do">Hairdo</a></li>
                         </ul>
                     </li>
-                    <!--  IF WE CHANGE TO APPAREL IT CAN ENCOMPASS SHOES -->
+                    <!--  IF WE CHANGE TO APPAREL IT CAN ENCOMPASS SHOES  -->
                      <li><a href="https://www.especiallyyours.com/category/clothing-brands.do">Clothing Brands</a>
                         <ul>
                             <li><a href="https://www.especiallyyours.com/category/clothing-brands/studio-ey.do">Studio EY</a></li>
@@ -381,7 +395,7 @@
         </ul>
     </div>
     <div>
-        <img class="ml-dynamic-data-img" alt="header" src="https://cdn.especiallyyours.com/cms/files/especiallyyours.com/homepage/e39tb/1924/hero.jpg?format=webp&maxWidth=1924&quality=75" height="1200px" width="1600px">
+        <img class="ml-dynamic-data-img" alt="header" src="https://cdn.especiallyyours.com/cms/files/especiallyyours.com/homepage/e3a/1924/hero.jpg?format=webp&maxWidth=1924&quality=75" width="81.4%">
     </div>
 </body>
 </html>
